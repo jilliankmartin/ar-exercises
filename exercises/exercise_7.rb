@@ -13,5 +13,7 @@ print "Give me a store name: "
 
 @store_name = gets.chomp
 
+
 Store.create(name: @store_name)
-puts "errors: #{@store_name.errors.full_messages}"
+@store_name.errors.full_messages.each { |n| puts n}
+# puts "errors: #{@store_name.errors.full_messages}"
