@@ -7,6 +7,7 @@ puts "----------"
 
 # Your code goes here ...
 @store3 = Store.find_by(id: 3);
+@store4 = Store.find_by(id: 4);
 
 @store3.destroy
 
